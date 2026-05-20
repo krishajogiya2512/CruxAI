@@ -1,92 +1,184 @@
-# Crux-AI
- 
- ## Project info
- 
- **Description**: Crux-AI is an AI-powered fact-checking and misinformation detection platform.
- 
- ## How can I edit this code?
- 
- There are several ways of editing your application.
- 
- **Use your preferred IDE**
- 
- If you want to work locally using your own IDE, you can clone this repo and push changes.
- 
- The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
- 
- Follow these steps:
- 
- ```sh
- # Step 1: Clone the repository using the project's Git URL.
- git clone <YOUR_GIT_URL>
- 
- # Step 2: Navigate to the project directory.
- cd <YOUR_PROJECT_NAME>
- 
- # Step 3: Install the necessary dependencies.
- npm i
- 
- # Step 4: Start the development server with auto-reloading and an instant preview.
- npm run dev
- ```
- 
- **Edit a file directly in GitHub**
- 
- - Navigate to the desired file(s).
- - Click the "Edit" button (pencil icon) at the top right of the file view.
- - Make your changes and commit the changes.
- 
- **Use GitHub Codespaces**
- 
- - Navigate to the main page of your repository.
- - Click on the "Code" button (green button) near the top right.
- - Select the "Codespaces" tab.
- - Click on "New codespace" to launch a new Codespace environment.
- - Edit files directly within the Codespace and commit and push your changes once you're done.
- 
- ## What technologies are used for this project?
- 
- This project is built with:
- 
- ### Frontend
- - Vite
- - TypeScript
- - React
- - shadcn-ui
- - Tailwind CSS
- 
- ### Backend
- - FastAPI (Python)
- - Groq AI (for fact-checking and explanations)
- - DuckDuckGo Search (for evidence gathering)
- - NewsData API (for news scanning)
- 
- ## How can I deploy this project?
- 
- ### Quick Deploy to Vercel
- 
- 1. Install Vercel CLI: `npm install -g vercel`
- 2. Run: `vercel`
- 3. Configure environment variables in Vercel dashboard:
-    - `GROQ_API_KEY` (Required)
-    - `NEWSDATA_API_KEY` (Optional)
- 4. Redeploy: `vercel --prod`
- 
- For detailed deployment instructions, troubleshooting, and production setup, see [DEPLOYMENT.md](./DEPLOYMENT.md).
- 
- ### Local Development
- 
- **Run frontend and backend together:**
- ```bash
- npm install
- npm run dev:all
- ```
- 
- **Or run separately:**
- ```bash
- # Frontend
- npm run dev
- 
- # Backend (in another terminal)
- npm run backend
- ```
+# CruxAI  
+### Helping people find the truth in a noisy world
+
+CruxAI is an AI-powered misinformation detection and credibility analysis platform designed to help users verify facts, analyze media credibility, monitor suspicious content, and stay informed during crisis situations.
+
+---
+
+# Features
+
+## Fact Verification
+Analyze claims and detect misinformation using AI-powered credibility checks.
+
+## Agent Monitor
+Track suspicious activity, monitor information patterns, and identify manipulated narratives.
+
+## Credibility Analysis
+Evaluate the trustworthiness of articles, sources, and media content.
+
+## Crisis Alerts
+Get real-time alerts and updates during critical events and emergencies.
+
+## Media Forensics
+Analyze images and media for possible manipulation or fake content detection.
+
+## Modern UI
+Clean, responsive, and user-friendly interface with dark mode support.
+
+---
+
+# Tech Stack
+
+## Frontend
+- React.js
+- Tailwind CSS
+- Vite
+- Framer Motion
+
+## Backend
+- Node.js
+- Express.js
+
+## AI / APIs
+- OpenAI API
+- Fact-check APIs
+- Media Verification APIs
+
+## Deployment
+- Vercel / Netlify (Frontend)
+- Render / Railway (Backend)
+
+---
+
+# 📂 Project Structure
+
+```bash
+CruxAI/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+# Installation & Setup
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/your-username/cruxai.git
+cd cruxai
+```
+
+---
+
+## Setup Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```bash
+http://localhost:5173
+```
+
+---
+
+## Setup Backend
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+Backend runs on:
+
+```bash
+http://localhost:8081
+```
+
+---
+
+# Environment Variables
+
+Create a `.env` file inside the backend folder:
+
+```env
+PORT=8081
+OPENAI_API_KEY=your_api_key
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+```
+
+---
+
+# Screenshots
+
+## Homepage
+- Modern landing page
+- AI-powered credibility tools
+- Responsive UI
+- Clean and professional design
+
+---
+
+# Deployment Guide
+
+## Frontend Deployment (Vercel)
+
+```bash
+npm run build
+```
+
+Deploy the generated `dist` folder to Vercel.
+
+---
+
+## Backend Deployment (Render)
+
+1. Push backend code to GitHub
+2. Create a new Web Service on Render
+3. Add environment variables
+4. Deploy 🚀
+
+---
+
+# Future Improvements
+
+- Real-time misinformation tracking
+- Browser extension support
+- AI-generated credibility score
+- Social media monitoring
+- Multi-language support
+
+---
+
+# Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+---
+
+
+
