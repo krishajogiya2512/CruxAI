@@ -154,7 +154,7 @@ Deploy the generated `dist` folder to Vercel.
 1. Push backend code to GitHub
 2. Create a new Web Service on Render
 3. Add environment variables
-4. Deploy 🚀
+4. Deploy 
 
 ---
 
