@@ -219,7 +219,7 @@ VITE_SUPABASE_PUBLISHABLE_KEY=eyJ...
 
 ### Backend Connection
 ```bash
-VITE_API_URL=http://localhost:8000  # Local
+VITE_API_URL=https://crux-backend-bzo6.onrender.com  # Local
 VITE_API_URL=https://your-backend.onrender.com  # Production
 ```
 
